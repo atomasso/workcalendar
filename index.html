@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calendar</title>
-    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
-	 <script src="vue.js"></script>
-	<!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto">    
+  <meta charset="utf-8">
+    <title>Calendar</title>    
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto">   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
   <h1>Kad ono (ne)radim...</h1>
   <span style="display:none">{{test}}</span>
     <div v-for="(months, year) in calendar" class="">
-	  <div v-for="(days, month) in months" class="header">        
+	  <div v-for="(days, month) in months" class=" col-md-6 col-xs-12">        
           <div class="head">
             {{ year }} - {{ Number(month) + 1 }}
           </div>
@@ -22,7 +22,7 @@
             <span v-for="headerDay in headerDays" class="h-day">
               {{ headerDay }}      
             </span>
-            <span v-for="item in days" class="day" :class="{'work': item.isWorking, 'free': !item.isWorking}">
+            <span v-for="item in days" class="day" :class="item.color">
               {{ item.day }} 
             </span>
           </div>

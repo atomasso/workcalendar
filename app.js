@@ -1,14 +1,14 @@
-  const DAYS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+  const DAYS = ['P', 'U', 'S', 'Č', 'P', 'S', 'N'];
   const START_DAY = 24;
   let YEARS = {
 	2017: {},
 	2018: {}
   };
   const WORK_STATES = {
-    0: true,
-    1: true,
-    2: false,
-    3: false
+    0: 'work',
+    1: 'night',
+    2: 'free',
+    3: 'free'
   };
   var vm = new Vue({
     el: "#container",
@@ -54,7 +54,7 @@
                this.calendar[year][month].push({'day': i + 1});		 		   		   
 		     } else {
 			   this.moduloCounter %= 4;
-               this.calendar[year][month].push({'day': i + 1, 'isWorking': this.workStates[this.moduloCounter]});		 		   		   	               
+               this.calendar[year][month].push({'day': i + 1, 'color': this.workStates[this.moduloCounter]});		 		   		   	               
 			   this.moduloCounter++
 			 }
            } 
@@ -62,7 +62,7 @@
 		 } else {
            for (i = 0; i < daysInMonth; i++, this.moduloCounter++) {		
 		     this.moduloCounter %= 4;
-             this.calendar[year][month].push({'day': i + 1, 'isWorking': this.workStates[this.moduloCounter]});		 		   		   
+             this.calendar[year][month].push({'day': i + 1, 'color': this.workStates[this.moduloCounter]});		 		   		   
            }  
 		 }
 	   },
