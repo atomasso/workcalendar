@@ -2,14 +2,13 @@ h1 {
   text-align: center;
   color: #fff;
 }
+
   .header {
-    width: 100%;
     padding: 10px 0;
     background-color: #2ecc71;
-	float: left;
-	 display: block;
+    float: left;
+    display: block;
     margin: 20px;
-    width: 350px;
     height: 350px;
     overflow: hidden;
     -webkit-border-radius: 10px;
