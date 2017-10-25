@@ -87,3 +87,12 @@ body {
     padding: 20px;
     font-family: 'Roboto', sans-serif;
   }
+
+
+/* Samsung Galaxy S5 (landscape) ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .header {
+    display: block;
+  }
+}
+  
