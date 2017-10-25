@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+	 <script src="vue.js"></script>
+	<!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto">    
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  
+  <div id="container">
+  <h1>Kad ono (ne)radim...</h1>
+  <span style="display:none">{{test}}</span>
+    <div v-for="(months, year) in calendar" class="">
+	  <div v-for="(days, month) in months" class="header">        
+          <div class="head">
+            {{ year }} - {{ Number(month) + 1 }}
+          </div>
+          <div class="days">
+            <span v-for="headerDay in headerDays" class="h-day">
+              {{ headerDay }}      
+            </span>
+            <span v-for="item in days" class="day" :class="{'work': item.isWorking, 'free': !item.isWorking}">
+              {{ item.day }} 
+            </span>
+          </div>
+       </div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body> 
+<html>
