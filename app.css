@@ -2,14 +2,13 @@ h1 {
   text-align: center;
   color: #fff;
 }
+
   .header {
-    width: 100%;
     padding: 10px 0;
     background-color: #2ecc71;
-	float: left;
-	 display: inline-block;
+    float: left;
+    display: block;
     margin: 20px;
-    width: 350px;
     height: 350px;
     overflow: hidden;
     -webkit-border-radius: 10px;
@@ -92,3 +91,12 @@ body {
     padding: 20px;
     font-family: 'Roboto', sans-serif;
   }
+
+
+/* Samsung Galaxy S5 (landscape) ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .header {
+    display: block;
+  }
+}
+  
