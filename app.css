@@ -17,8 +17,8 @@ h1 {
     float: left;
     display: block;
     margin: 20px;
-    height: 350px;
-    width: 350px;
+    height: 100%;
+    width: 80%;
     overflow: hidden;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -76,17 +76,17 @@ h1 {
  }
   
  .days .day.work {    
-    border-bottom: 3px solid #ffdd83;
+    border-bottom: 3px solid #393E46;
     /*color: #0000ff;*/
  }
  
  .days .day.night {    
-    border-bottom: 3px solid #222831;
+    border-bottom: 3px solid #393E46;
     /*color: #ff0000;*/
 }
 
  .days .day.free {    
-    border-bottom: 3px solid #28cc9e;
+    /*border-bottom: 3px solid #28cc9e;*/
     /*color: #F96D00;*/
 }
 
