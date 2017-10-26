@@ -47,7 +47,7 @@
 		 }	     
 	   },
 	   calculateDay(year, month) {
-		 var daysInMonth = (new Date(year, month, 0).getDate());
+		 var daysInMonth = (new Date(year, month + 1, 0).getDate());
 		 if (this.firstTurn) {
 		   for (i = 0; i < daysInMonth; i++) {
              if ((i + 1) < this.startDay) { 			   
