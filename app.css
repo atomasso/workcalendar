@@ -1,5 +1,5 @@
   #container {
-    width: 100%;
+    width: 90%;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
   }
@@ -13,11 +13,12 @@ h1 {
 
   .header {
     padding: 10px 0;
-    background-color: #F96D00;
+    background-color: #a6ed8e;
     float: left;
     display: block;
     margin: 20px;
     height: 350px;
+    width: 350px;
     overflow: hidden;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -75,7 +76,7 @@ h1 {
  }
   
  .days .day.work {    
-    border-bottom: 3px solid #0000ff;
+    border-bottom: 3px solid #ffdd83;
     /*color: #0000ff;*/
  }
  
@@ -85,7 +86,7 @@ h1 {
 }
 
  .days .day.free {    
-    border-bottom: 3px solid #F96D00;
+    border-bottom: 3px solid #28cc9e;
     /*color: #F96D00;*/
 }
 
